@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.example'
@@ -9,8 +10,6 @@ repositories {
     mavenCentral()
 }
 
-task hello {
-    doLast {
-        println 'Gradle Build Successful!'
-    }
+application {
+    mainClass = 'App'
 }
